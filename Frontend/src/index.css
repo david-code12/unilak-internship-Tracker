@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f6f9;
+}
+
+.dashboard-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 { color: #1a365d; }
+h2 { color: #2b6cb0; }
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-approve { background-color: #319795; color: white; }
+.btn-reject { background-color: #e53e3e; color: white; }
+.btn-logout {
+  background: transparent;
+  color: white;
+  border: 1px solid #a0aec0;
+  padding: 6px 12px;
+}
+.btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+.app-nav {
+  background: #1a202c;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: -20px -20px 20px;
+  font-family: sans-serif;
+}
+.app-brand { font-weight: bold; font-size: 1.2rem; }
+.app-nav-right { display: flex; gap: 12px; align-items: center; }
+.app-user { font-size: 0.9rem; color: #cbd5e0; }
+.session-check { text-align: center; padding: 80px 20px; color: #4a5568; }
+
+.login-page {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-kicker { margin: 0; color: #2b6cb0; font-weight: bold; letter-spacing: 0.02em; }
+.login-copy { color: #4a5568; margin: 0 0 8px; }
+.login-card label { font-weight: bold; margin-top: 6px; }
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+.login-submit { margin-top: 8px; width: 100%; padding: 12px; }
+.login-error {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.login-hint {
+  margin-top: 8px;
+  background: #edf2f7;
+  padding: 12px;
+  border-radius: 4px;
+  color: #4a5568;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+}
